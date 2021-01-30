@@ -28,6 +28,12 @@ class listController extends Controller
         return View('biblio.examples.newbook');
     }
 
+    public function NewReader()
+    {   
+
+        return View('biblio.examples.newreader');
+    }
+
     public function EditBook($ID_L)
     {   
         $Livre= Livre::find($ID_L);
@@ -43,11 +49,11 @@ class listController extends Controller
         $Restitution->ID_R = request('ID_R1');
         $Restitution->ID_L = request('ID_L1');
         $Restitution->ID_E = request('ID_E1');
+      
         
-        $idr= Emprunt::Where(['ID_R'=>$Restitution->ID_R,'ID_L'=>$Restitution->ID_L,'ID_E'=>$Restitution->ID_E])->get();
-       
+        $idr= Emprunt::Where(['ID_R'=>$Restitution->ID_R,'ID_L'=>$Restitution->ID_L,'ID_E'=>$Restitution->ID_E])->get()->first();
 
-        if(($idr->ID_R==$Restitution->ID_R) && ($idr->ID_L==$Restitution->ID_l) && ($idr->ID_E==$Restitution->ID_E ))
+        if(($idr->ID_R==$Restitution->ID_R) && ($idr->ID_L==$Restitution->ID_L) && ($idr->ID_E==$Restitution->ID_E ))
         {
 
             $Restitution->Save();

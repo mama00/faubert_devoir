@@ -31,7 +31,7 @@
   <!-- Argon CSS -->
   <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
 <style type="text/css">/* Chart.js */
-@keyframes  chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+@keyframes    chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
 
 <body class="g-sidenav-show g-sidenav-pinned" style="min-height: 100vh;">
   <!-- Sidenav -->
@@ -56,14 +56,8 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="book">
-              <i class="fa fa-book" aria-hidden="true"></i>
+              <i class="fa fa-book" aria-hidd••••••••en="true"></i>
                 <span class="nav-link-text">Book</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="loan">
-              <i class="fa fa-upload" aria-hidden="true"></i>
-                <span class="nav-link-text">Loan</span>
               </a>
             </li>
             <li class="nav-item">
@@ -80,22 +74,16 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="release">
-              <i class="fa fa-download" aria-hidden="true"></i>
-                <span class="nav-link-text">Release</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="newbook">
+              <a class="nav-link" href="newreader">
               <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                <span class="nav-link-text">New Books</span>
+                <span class="nav-link-text">New Readers</span>
               </a>
             </li>
           </ul>
         </div>
       </div> 
   <div>
-<p class="mssg"> {{ session('mssg') }} </p>
+<p class="mssg"> <?php echo e(session('mssg')); ?> </p>
 </div>
 
     </div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 0px;"></div></div></div></div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 0px;"></div></div></div></div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 0px;"></div></div></div></div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 141px; top: 0px;"></div></div></div></div>
@@ -157,7 +145,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                          <h4 class="mb-0 text-sm">{{Auth::user()->Nom}} {{Auth::user()->Prenom}}</h4>
+                          <h4 class="mb-0 text-sm"><?php echo e(Auth::user()->Nom); ?> <?php echo e(Auth::user()->Prenom); ?></h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>2 hrs ago</small>
@@ -176,7 +164,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">{{Auth::user()->Nom}} {{Auth::user()->Prenom}}</h4>
+                            <h4 class="mb-0 text-sm"><?php echo e(Auth::user()->Nom); ?> <?php echo e(Auth::user()->Prenom); ?></h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>3 hrs ago</small>
@@ -195,7 +183,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">{{Auth::user()->Nom}} {{Auth::user()->Prenom}}</h4>
+                            <h4 class="mb-0 text-sm"><?php echo e(Auth::user()->Nom); ?> <?php echo e(Auth::user()->Prenom); ?></h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>5 hrs ago</small>
@@ -214,7 +202,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">{{Auth::user()->Nom}} {{Auth::user()->Prenom}}</h4>
+                            <h4 class="mb-0 text-sm"><?php echo e(Auth::user()->Nom); ?> <?php echo e(Auth::user()->Prenom); ?></h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>2 hrs ago</small>
@@ -233,7 +221,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">{{Auth::user()->Nom}} {{Auth::user()->Prenom}}</h4>
+                            <h4 class="mb-0 text-sm"><?php echo e(Auth::user()->Nom); ?> <?php echo e(Auth::user()->Prenom); ?></h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>3 hrs ago</small>
@@ -302,7 +290,7 @@
                     <img alt="Image placeholder" src="assets/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">{{Auth::user()->Nom}} {{Auth::user()->Prenom}}</span>
+                    <span class="mb-0 text-sm  font-weight-bold"><?php echo e(Auth::user()->Nom); ?> <?php echo e(Auth::user()->Prenom); ?></span>
                   </div>
                 </div>
               </a>
@@ -327,7 +315,7 @@
                   <span>Support</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="{{route('logout')}}" class="dropdown-item">
+                <a href="<?php echo e(route('logout')); ?>" class="dropdown-item">
                   <i class="ni ni-user-run"></i>
                   <span>Logout</span>
                 </a>
@@ -354,7 +342,7 @@
                       <h5 class="card-title text-uppercase text-muted mb-0">Total Loans</h5>
 
               
-                      <span class="h2 font-weight-bold mb-0">{{$Loans}}</span>
+                      <span class="h2 font-weight-bold mb-0"><?php echo e($Loans); ?></span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
@@ -372,7 +360,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Readers</h5>
-                      <span class="h2 font-weight-bold mb-0">{{ $read }}</span>
+                      <span class="h2 font-weight-bold mb-0"><?php echo e($read); ?></span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
@@ -390,7 +378,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Books</h5>
-                      <span class="h2 font-weight-bold mb-0">{{ $book }}</span>
+                      <span class="h2 font-weight-bold mb-0"><?php echo e($book); ?></span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
@@ -409,7 +397,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Releases</h5>
-                      <span class="h2 font-weight-bold mb-0">{{ $release }}</span>
+                      <span class="h2 font-weight-bold mb-0"><?php echo e($release); ?></span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
@@ -609,4 +597,4 @@
 
 
 
-</body></html>
+</body></html><?php /**PATH /home/marceus/Documents/faubert_devoir/resources/views/biblio/index1.blade.php ENDPATH**/ ?>

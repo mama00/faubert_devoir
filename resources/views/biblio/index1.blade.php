@@ -56,14 +56,8 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="book">
-              <i class="fa fa-book" aria-hidden="true"></i>
+              <i class="fa fa-book" aria-hidd••••••••en="true"></i>
                 <span class="nav-link-text">Book</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="loan">
-              <i class="fa fa-upload" aria-hidden="true"></i>
-                <span class="nav-link-text">Loan</span>
               </a>
             </li>
             <li class="nav-item">
@@ -80,15 +74,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="release">
-              <i class="fa fa-download" aria-hidden="true"></i>
-                <span class="nav-link-text">Release</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="newbook">
+              <a class="nav-link" href="newreader">
               <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                <span class="nav-link-text">New Books</span>
+                <span class="nav-link-text">New Readers</span>
               </a>
             </li>
           </ul>

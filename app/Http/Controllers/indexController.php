@@ -32,6 +32,28 @@ class indexController extends Controller
         'release'=>$release]);
     }
     
+    public function index1(){
+
+        $Emprunt= Emprunt::all();
+        $Livre = Livre::all();
+        $Readers = Readers::all();
+        $Restitution = Restitution::all();
+
+        $Loans=$Emprunt->count();
+        $read=$Readers->count();
+        $book=$Livre->count();
+        $release=$Restitution->count();
+
+        return View('biblio.index1',
+        ['Emprunt'=>$Emprunt, 'Loans'=>$Loans, 
+        'Livre'=>$Livre, 
+        'Readers'=>$Readers,
+        'Loans'=>$Loans, 
+        'read'=>$read,
+        'book'=>$book,
+        'release'=>$release]);
+    }
+
     public function getIcon(){
         return View('biblio.examples.icons');
     }
